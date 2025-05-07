@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust Travels</title>
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="box-container">
+        <!-- Header Box -->
+        <div class="box header-box">
+            <nav class="full-width-nav">
+                <div class="nav-container">
+                    <div class="logo">Wanderlust</div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                    <div id="currentDateTime" class="datetime"></div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hero Box -->
+        <div class="box" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
+            <section class="contact-hero">
+                <div class="hero-content">
+                    <h1>Get In Touch</h1>
+                    <p>We'd love to hear from you</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="box box-primary">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2 class="box-title">Send Us a Message</h2>
+                    <div class="box-content">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone (optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="booking">Booking Question</option>
+                                    <option value="custom">Custom Trip Request</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h2 class="box-title">Contact Information</h2>
+                    <div class="box-content">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Travel Street<br>Adventure City, AC 12345</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@wanderlust.com">info@wanderlust.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+18005551234">(800) 555-1234</a></p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Box -->
+        <div class="box box-secondary" style="padding: 0; overflow: hidden;">
+            <section class="map-section">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256064576!2d-73.98784468459382!3d40.748440479327996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629999999999!5m2!1sen!2sus" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+
+        <!-- Footer Box -->
+        <div class="box footer-box">
+            <footer class="footer">
+                <!-- Same footer content as index.html -->
+            </footer>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Thank You!</h2>
+            <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+            <button class="btn btn-primary close-btn">Close</button>
+        </div>
+    </div>
+    <!-- Footer Box -->
+    <div class="box footer-box">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Wanderlust</h3>
+                    <p>Making travel dreams come true since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>123 Travel Street<br>Adventure City, AC 12345</p>
+                    <p>info@wanderlust.com<br>(800) 555-1234</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Travels. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/date-time.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
