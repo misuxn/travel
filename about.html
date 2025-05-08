@@ -3,155 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Wanderlust Travels</title>
-    <link rel="stylesheet" href="css/framework.css">
+    <meta name="description" content="Learn about AgriGrowth - our mission, vision, and the team behind our premium agriculture solutions.">
+    <meta name="keywords" content="about AgriGrowth, agriculture company, farming team, organic farming history">
+    <title>About Us - AgriGrowth</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 <body>
-    <div class="box-container">
-        <!-- Header Box -->
-        <div class="box header-box">
-            <nav class="full-width-nav">
-                <div class="nav-container">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="./images/logo.png" alt="Wanderlust Logo" height="60">
-                        </a>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
-                    <div id="currentDateTime" class="datetime"></div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Hero Box -->
-        <div class="box" style="padding: 0; overflow: hidden; margin-bottom: 2rem;">
-            <section class="about-hero">
-                <div class="hero-content">
-                    <h1>Our Story</h1>
-                    <p>Discover the passion behind Wanderlust Travels</p>
-                </div>
-            </section>
-        </div>
-
-        <!-- Team Box -->
-        <div class="box box-primary">
-            <h2 class="box-title">Meet Our Team</h2>
-            <div class="box-content">
-                <div class="team-grid">
-                    <div class="team-card">
-                        <img src="./images/22.jpg" alt="Sarah Johnson">
-                        <h3>Sarah Johnson</h3>
-                        <p class="position">Founder & CEO</p>
-                        <p class="bio">With over 15 years in the travel industry, Sarah founded Wanderlust to share her passion for authentic travel experiences.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <img src="./images/1.jpg" alt="Michael Chen">
-                        <h3>Michael Chen</h3>
-                        <p class="position">Travel Director</p>
-                        <p class="bio">Michael's expertise in Asian destinations ensures our clients get the most authentic experiences.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <img src="./images/33.jpg" alt="Emma Rodriguez">
-                        <h3>Emma Rodriguez</h3>
-                        <p class="position">Customer Experience</p>
-                        <p class="bio">Emma ensures every client's journey is seamless from booking to return.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-time" id="date-time"></div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-        </div>
-
-        <!-- History Box -->
-        <div class="box box-secondary">
-            <h2 class="box-title">Our Journey</h2>
-            <div class="box-content">
-                <div class="history-container">
-                    <div class="history-content">
-                        <p>Founded in 2010, Wanderlust began as a small boutique travel agency with a big dream: to transform ordinary vacations into extraordinary adventures.</p>
-                        <p>Today, we've grown into a trusted name in travel, with thousands of satisfied clients and partnerships with top-rated hotels and tour operators worldwide.</p>
-                        <p>Our mission remains the same: to create personalized travel experiences that go beyond the typical tourist path.</p>
-                    </div>
-                    <div class="history-image">
-                        <img src="./images/office.jpg" alt="Our office">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Values Box -->
-        <div class="box box-dark">
-            <h2 class="box-title">Our Values</h2>
-            <div class="box-content">
-                <div class="values-grid">
-                    <div class="value-card">
-                        <i class="fas fa-globe-americas"></i>
-                        <h3>Sustainable Travel</h3>
-                        <p>We're committed to eco-friendly practices that protect the destinations we love.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fas fa-heart"></i>
-                        <h3>Authentic Experiences</h3>
-                        <p>We go beyond tourist traps to show you the real heart of each destination.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fas fa-hand-holding-heart"></i>
-                        <h3>Personal Service</h3>
-                        <p>Your trip is designed around your interests, not a one-size-fits-all package.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer Box -->
-        <div class="box footer-box">
-            <footer class="footer">
-                <div class="footer-container">
-                    <div class="footer-section">
-                        <h3>Wanderlust</h3>
-                        <p>Making travel dreams come true since 2010.</p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Contact</h3>
-                        <p>123 Travel Street<br>Adventure City, AC 12345</p>
-                        <p>info@wanderlust.com<br>(800) 555-1234</p>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Wanderlust Travels. All rights reserved.</p>
-                </div>
-            </footer>
         </div>
     </div>
 
-    <script src="js/date-time.js"></script>
+    <!-- Header with Logo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="AgriGrowth Logo">
+                <h1>Agri<span>Growth</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Learn about our mission, vision, and the team behind AgriGrowth</p>
+        </div>
+    </section>
+
+    <!-- Ad Space -->
+    <section class="ad-space">
+        <div class="container">
+            <!-- Google AdSense Code - Replace with your Ad Unit ID -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+            <!-- AboutPageTop -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </section>
+
+    <!-- About Company -->
+    <section class="about-company">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2005, AgriGrowth began as a small family-owned business with a passion for sustainable agriculture. What started as a local supplier of organic fertilizers has grown into a leading provider of comprehensive agriculture solutions.</p>
+                    <p>Today, we serve farmers across the country, helping them implement sustainable practices that increase yield while protecting the environment. Our team of agriculture experts brings decades of combined experience to every project.</p>
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                            <p>To empower farmers with innovative, sustainable agriculture solutions that increase productivity while preserving our planet for future generations.</p>
+                        </div>
+                        <div class="vision">
+                            <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                            <p>To be the most trusted partner for farmers worldwide, recognized for our commitment to quality, sustainability, and farmer success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./images/about-company.jpg" alt="Our Farm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="our-team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="./images/team1.jpg" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p class="position">Founder & CEO</p>
+                    <p class="bio">With over 30 years in the agriculture industry, John founded AgriGrowth to bring sustainable solutions to farmers nationwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./images/team2.jpg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p class="position">Chief Agriculture Officer</p>
+                    <p class="bio">Jane holds a Ph.D. in Agricultural Science and leads our team of experts in developing innovative farming solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./images/team3.jpg" alt="Mike Johnson">
+                    <h3>Mike Johnson</h3>
+                    <p class="position">Director of Operations</p>
+                    <p class="bio">Mike ensures our operations run smoothly and that our customers receive the highest level of service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Achievements -->
+    <section class="achievements">
+        <div class="container">
+            <h2 class="section-title">Our Achievements</h2>
+            <div class="achievement-grid">
+                <div class="achievement-item">
+                    <i class="fas fa-users"></i>
+                    <div class="count" data-count="2500">0</div>
+                    <p>Happy Farmers</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-tractor"></i>
+                    <div class="count" data-count="120">0</div>
+                    <p>Farms Supported</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-award"></i>
+                    <div class="count" data-count="15">0</div>
+                    <p>Industry Awards</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-leaf"></i>
+                    <div class="count" data-count="100">0</div>
+                    <p>Organic Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About AgriGrowth</h3>
+                    <p>We are committed to providing sustainable agriculture solutions that help farmers increase yield while protecting the environment.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Agriculture City, AG 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                        <li><i class="fas fa-envelope"></i> info@agrigrowth.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for farming tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year"></span> AgriGrowth. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
